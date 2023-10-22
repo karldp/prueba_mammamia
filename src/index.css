@@ -1,0 +1,159 @@
+
+
+/* HERO SECTION --------------------------------------------------------------------------- */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px; /* O el alto que desees para tu hero section */
+    background-image: url('/pizza_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Color de texto, puedes cambiarlo según prefieras */
+    position: relative;
+}
+
+.hero-section h1 {
+font-size: 4rem;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Oscurecimiento de la imagen */
+    z-index: 0;
+}
+
+.hero-section h1, .hero-section p {
+    z-index: 1;
+}
+
+
+/* NAV-ICONS ------------------------------------------------------------------------------------------ */
+
+
+.home-icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.cart-icon-text{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.cart-price{
+    color: aliceblue;
+    margin: 0;
+}
+
+.cart-icon{
+    font-size: 1.7rem;
+}
+
+
+/* CARDS-DISPLAY ------------------------------------------------------------------------*/
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card-details{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .card-button1{
+    margin-right: 2rem;
+
+  }
+  .card-button2{
+    margin-left: 2rem;
+
+  }
+
+  .cart-icon-butt{
+    font-size: 1.25rem;
+  }
+  
+
+/* SHOPPING-CART ------------------------------------------------------------------------- */
+
+  .pizza-thumbnail{
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+
+  .shopping-cart-list{
+    display: flex; 
+    align-items: center; 
+    justify-content:space-between;
+    margin-bottom: 10px;
+  }
+
+  .shopping-cart-container{
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .shopping-cart-img{
+    display: flex; 
+    align-items: center; 
+  }
+
+  .add-del-buttons{
+    display: flex; 
+    align-items: center;
+  }
+
+  .decrease-pizza{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .increase-pizza{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .cart-total{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .pay-button{
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  /* CARD-DETAILS ------------------------------------------------------------------------ */
+
+  
+
+  .not-found{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
