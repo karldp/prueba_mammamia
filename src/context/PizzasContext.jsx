@@ -10,7 +10,7 @@ const PizzasProvider = ({children}) => {
 
   const getPizzas = async () => {
     try {
-        const response = await fetch("/src/pizzas.json");
+        const response = await fetch("/pizzas.json");
 
         if (!response.ok) {
             throw new Error("The data have not been found");
